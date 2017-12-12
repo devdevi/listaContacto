@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--LINKS-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+
+    <body> 
+          <nav>
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><i class="material-icons">album</i>Lista de contactos</a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Modal Trigger -->
+                  <li> <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">add</i></a></li>
+                  <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal ">
+    <div class="modal-content">
+      <h4>Nuevo contacto</h4>
+       <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telefono</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+            </div>
+          </form>
+       </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="btn" class="modal-action modal-close waves-effect waves-green btn-flat ">Agregar</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  
+  <!-- contenedor comentarios -->
+  <div id="cont"></div>
+  <!-- <section class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s9">
+          <h5>Nombre</h6>
+          <div class="divider"></div>
+          <P>telefono</P>
+        </div>
+        <div class="col s3">
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">delete_forever</i></a>
+          
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+<!--SCRIPTS-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script type="text/javascript" src="assets/js/app.js"></script>
+ 
+
+    </body>
+  </html>
